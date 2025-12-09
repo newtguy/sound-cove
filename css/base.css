@@ -226,6 +226,7 @@ footer p {
     z-index: 0;
 }
 
+/* Animations */
 @keyframes bounce {
 
     0%,
