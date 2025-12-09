@@ -5,3 +5,4 @@ It uses three API's to achieve the following:
   3) link users to external sites that stream specific songs.
 
 Created by Nathan Shelley.
+Github Pages link: https://newtguy.github.io/sound-cove/
