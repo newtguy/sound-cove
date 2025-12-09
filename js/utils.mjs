@@ -1,5 +1,5 @@
-const HEADERPATH = "../partials/header.html";
-const FOOTERPATH = "../partials/footer.html";
+const HEADERPATH = "partials/header.html";
+const FOOTERPATH = "partials/footer.html";
 
 export async function loadHeaderFooter() {
     await loadHeader();
