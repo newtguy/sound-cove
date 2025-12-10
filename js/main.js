@@ -1,7 +1,7 @@
-import { loadHeaderFooter } from "./index.js";
+import { loadHeaderFooter, loadBarsAnimation, submitSearchForm } from "./index.js";
 
-loadHeaderFooter();
+await loadHeaderFooter();
+await loadBarsAnimation();
 
-const hero = document.querySelector("#hero");
-
-
+const searchForm = document.getElementById('search-form');
+searchForm.addEventListener('submit', submitSearchForm);

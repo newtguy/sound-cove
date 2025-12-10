@@ -1,5 +1,8 @@
 // All imports & exports here.
 
-import { loadHeaderFooter } from "./utils.mjs";
+import { loadHeaderFooter, loadBarsAnimation, submitSearchForm, fetchSongs, formatSongs }
+    from "./utils.mjs";
+import { Results } from "./Results.mjs";
 
-export { loadHeaderFooter };
+export { loadHeaderFooter, loadBarsAnimation, submitSearchForm, fetchSongs, formatSongs };
+export { Results };
