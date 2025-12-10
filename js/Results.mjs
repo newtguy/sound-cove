@@ -56,8 +56,8 @@ export class Results {
     }
 
     addToPlaylist(song) {
-        // call or make instance of Playlist module
-        playlist.addToPlaylist(song);
+        // call Playlist internal addToPlaylist
+        this.playlist.addToPlaylist(song);
         alert(`${song.title} added to playlist!`);
     }
 }
