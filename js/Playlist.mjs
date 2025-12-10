@@ -63,6 +63,13 @@ export class Playlist {
     renderPlaylist() {
         this.flexEl.innerHTML = "";
 
+        //content to prompt user to add songs to playlist
+        if (this.songs.length === 0) {
+            const emptyMsg = document.createElement("p");
+            emptyMsg.textContent = "Your playlist is empty. Add some songs!";
+            emptyMsg.style.textAlign = "center";
+            this.flexEl.appendChild(emptyMsg);
+        }
         // cards
         this.songs.forEach(song => {
             const card = document.createElement("div");
