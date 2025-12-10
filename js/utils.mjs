@@ -107,7 +107,7 @@ export async function getPixabayImage(query) {
     }
 
     // if fetch fails, use logo
-    return "images/headphone-svgrepo-com.svg";
+    return "./images/headphone-svgrepo-com.svg";
 }
 
 
