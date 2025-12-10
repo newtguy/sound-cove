@@ -1,7 +1,8 @@
-import { fetchSongs, formatSongs } from './index.js';
+import { fetchSongs, formatSongs, Playlist } from './index.js';
 
 export class Results {
     constructor(query, elementId) {
+        this.playlist = new Playlist();
         this.query = query;
         this.grid = document.getElementById(elementId);
         this.songs = [];
@@ -56,5 +57,7 @@ export class Results {
 
     addToPlaylist(song) {
         // call or make instance of Playlist module
+        playlist.addToPlaylist(song);
+        alert(`${song.title} added to playlist!`);
     }
 }
